@@ -6,13 +6,15 @@ function Home() {
 
 
     const increasetemp = ()=>{
-       if (temp > 37){
+      if (temp===100) return;
+       if (temp >= 37){
         setcolor('red')
       }
       settemp(temp +1)
     }
     const decreasetemp = ()=>{
-      if (temp < 38){
+      if (temp===-73) return;
+      if (temp < 39){
 
         setcolor('blue')
       }
